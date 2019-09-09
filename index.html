@@ -192,7 +192,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/832/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/905/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张奥运">
@@ -206,7 +206,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/09/09/array/832/" class="post-title-link" itemprop="url">832.Flipping an Image</a>
+            <a href="/2019/09/09/array/905/" class="post-title-link" itemprop="url">905. Sort Array By Parity</a>
           
         </h1>
 
@@ -221,7 +221,87 @@
                 
               
 
-              <time title="创建时间：2019-09-09 09:52:46 / 修改时间：10:20:11" itemprop="dateCreated datePublished" datetime="2019-09-09T09:52:46+08:00">2019-09-09</time>
+              <time title="创建时间：2019-09-09 16:43:20 / 修改时间：16:49:45" itemprop="dateCreated datePublished" datetime="2019-09-09T16:43:20+08:00">2019-09-09</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
+<p>You may return any answer array that satisfies this condition.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>非负数组将所有偶数放在前面，所有奇数放在后面，不管顺序</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ol>
+<li>设置一个标志位从0开始记录偶数可以放的位置，如果遇到偶数就将标志位对应的数字和这个偶数进行对换，对换之后标志位加1 (1ms，超越100%)</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] sortArrayByParity(<span class="keyword">int</span>[] A) &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i != flag) &#123;</span><br><span class="line">                    tmp = A[flag];</span><br><span class="line">                    A[flag] = A[i];</span><br><span class="line">                    A[i] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">                flag += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> A;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/832/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张奥运">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="披星路">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/09/09/array/832/" class="post-title-link" itemprop="url">832. Flipping an Image</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-09 09:52:46 / 修改时间：16:52:23" itemprop="dateCreated datePublished" datetime="2019-09-09T09:52:46+08:00">2019-09-09</time>
             </span>
           
             
@@ -321,9 +401,18 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+        
       </div>
     
   </nav>
