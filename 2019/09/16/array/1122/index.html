@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+  <meta name="description" content="题目Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1. Sort the elements of arr1 such that the relative ordering of items in arr1 are the same">
 <meta name="keywords" content="Array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="905. Sort Array By Parity">
-<meta property="og:url" content="http://yoursite.com/2019/09/09/array/905/index.html">
+<meta property="og:title" content="Relative Sort Array">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/array/1122/index.html">
 <meta property="og:site_name" content="披星路">
-<meta property="og:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+<meta property="og:description" content="题目Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1. Sort the elements of arr1 such that the relative ordering of items in arr1 are the same">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T00:58:00.348Z">
+<meta property="og:updated_time" content="2019-09-16T01:07:39.090Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="905. Sort Array By Parity">
-<meta name="twitter:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
-  <link rel="canonical" href="http://yoursite.com/2019/09/09/array/905/">
+<meta name="twitter:title" content="Relative Sort Array">
+<meta name="twitter:description" content="题目Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1. Sort the elements of arr1 such that the relative ordering of items in arr1 are the same">
+  <link rel="canonical" href="http://yoursite.com/2019/09/16/array/1122/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>905. Sort Array By Parity | 披星路</title>
+  <title>Relative Sort Array | 披星路</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/905/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/array/1122/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张奥运">
@@ -210,7 +210,7 @@
       <meta itemprop="name" content="披星路">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">905. Sort Array By Parity
+        <h1 class="post-title" itemprop="name headline">Relative Sort Array
 
           
         </h1>
@@ -226,19 +226,11 @@
                 
               
 
-              <time title="创建时间：2019-09-09 16:43:20" itemprop="dateCreated datePublished" datetime="2019-09-09T16:43:20+08:00">2019-09-09</time>
+              <time title="创建时间：2019-09-16 09:02:44 / 修改时间：09:07:39" itemprop="dateCreated datePublished" datetime="2019-09-16T09:02:44+08:00">2019-09-16</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-10 08:58:00" itemprop="dateModified" datetime="2019-09-10T08:58:00+08:00">2019-09-10</time>
-              </span>
             
           
 
@@ -253,13 +245,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
-<p>You may return any answer array that satisfies this condition.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>非负数组将所有偶数放在前面，所有奇数放在后面，不管顺序</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.</p>
+<p>Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2.  Elements that don’t appear in arr2 should be placed at the end of arr1 in ascending order.</p>
+<p>Example 1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]</span><br><span class="line">Output: [2,2,2,1,4,3,3,9,6,7,19]</span><br></pre></td></tr></table></figure>
+
+<p>Constraints:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr1.length, arr2.length &lt;= 1000</span><br><span class="line">0 &lt;= arr1[i], arr2[i] &lt;= 1000</span><br><span class="line">Each arr2[i] is distinct.</span><br><span class="line">Each arr2[i] is in arr1.</span><br></pre></td></tr></table></figure>
+
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>这题是经典的计数排序问题，用一个额外的数组来计算arr1中每个数字出现的次数，数组的下标表示数字，值表示这个数字出现的次数。然后一次循环将这个数组中所有arr2包含的数字按arr2中的顺序输出，一次循环将剩下的数字从小到大输出，即可得到结果。</p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><ol>
-<li>设置一个标志位从0开始记录偶数可以放的位置，如果遇到偶数就将标志位对应的数字和这个偶数进行对换，对换之后标志位加1 (1ms，超越100%)</li>
+<li>计数排序</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] sortArrayByParity(<span class="keyword">int</span>[] A) &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i != flag) &#123;</span><br><span class="line">                    tmp = A[flag];</span><br><span class="line">                    A[flag] = A[i];</span><br><span class="line">                    A[i] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">                flag += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> A;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] relativeSortArray(<span class="keyword">int</span>[] arr1, <span class="keyword">int</span>[] arr2) &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr1.length == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> arr1;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] arr1Flag = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">1001</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr1.length; i++) &#123;</span><br><span class="line">            arr1Flag[arr1[i]]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> idx = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr2.length; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span> (arr1Flag[arr2[i]] != <span class="number">0</span>) &#123;</span><br><span class="line">                arr1[idx++] = arr2[i];</span><br><span class="line">                arr1Flag[arr2[i]]--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1001</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">while</span> (arr1Flag[i] != <span class="number">0</span>) &#123;</span><br><span class="line">                arr1[idx++] = i;</span><br><span class="line">                arr1Flag[i]--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> arr1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -286,8 +284,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/09/array/832/" rel="next" title="832. Flipping an Image">
-                  <i class="fa fa-chevron-left"></i> 832. Flipping an Image
+                <a href="/2019/09/16/array/1002/" rel="next" title="1002. Find Common Characters">
+                  <i class="fa fa-chevron-left"></i> 1002. Find Common Characters
                 </a>
               
             </div>
@@ -296,8 +294,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/09/array/561/" rel="prev" title="561. Array Partition I">
-                  561. Array Partition I <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/16/array/1185/" rel="prev" title="1185. Day of the Week">
+                  1185. Day of the Week <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>

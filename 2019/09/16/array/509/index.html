@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+  <meta name="description" content="题目The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is, 12F(0) = 0,">
 <meta name="keywords" content="Array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="905. Sort Array By Parity">
-<meta property="og:url" content="http://yoursite.com/2019/09/09/array/905/index.html">
+<meta property="og:title" content="509. Fibonacci Number">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/array/509/index.html">
 <meta property="og:site_name" content="披星路">
-<meta property="og:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+<meta property="og:description" content="题目The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is, 12F(0) = 0,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T00:58:00.348Z">
+<meta property="og:updated_time" content="2019-09-16T01:09:22.434Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="905. Sort Array By Parity">
-<meta name="twitter:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
-  <link rel="canonical" href="http://yoursite.com/2019/09/09/array/905/">
+<meta name="twitter:title" content="509. Fibonacci Number">
+<meta name="twitter:description" content="题目The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is, 12F(0) = 0,">
+  <link rel="canonical" href="http://yoursite.com/2019/09/16/array/509/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>905. Sort Array By Parity | 披星路</title>
+  <title>509. Fibonacci Number | 披星路</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/905/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/array/509/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张奥运">
@@ -210,7 +210,7 @@
       <meta itemprop="name" content="披星路">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">905. Sort Array By Parity
+        <h1 class="post-title" itemprop="name headline">509. Fibonacci Number
 
           
         </h1>
@@ -226,19 +226,11 @@
                 
               
 
-              <time title="创建时间：2019-09-09 16:43:20" itemprop="dateCreated datePublished" datetime="2019-09-09T16:43:20+08:00">2019-09-09</time>
+              <time title="创建时间：2019-09-16 09:02:08 / 修改时间：09:09:22" itemprop="dateCreated datePublished" datetime="2019-09-16T09:02:08+08:00">2019-09-16</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-10 08:58:00" itemprop="dateModified" datetime="2019-09-10T08:58:00+08:00">2019-09-10</time>
-              </span>
             
           
 
@@ -253,13 +245,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
-<p>You may return any answer array that satisfies this condition.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>非负数组将所有偶数放在前面，所有奇数放在后面，不管顺序</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">F(0) = 0,   F(1) = 1</span><br><span class="line">F(N) = F(N - 1) + F(N - 2), for N &gt; 1.</span><br></pre></td></tr></table></figure>
+
+<p>Given N, calculate F(N).<br>Note:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 ≤ N ≤ 30.</span><br></pre></td></tr></table></figure>
+
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>经典的斐波拉契数列问题，正常解法有递归和非递归两种方式，因为题目规定N取值在0到30之间，所有有直接打表的解法。</p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><ol>
-<li>设置一个标志位从0开始记录偶数可以放的位置，如果遇到偶数就将标志位对应的数字和这个偶数进行对换，对换之后标志位加1 (1ms，超越100%)</li>
+<li>递归方式</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] sortArrayByParity(<span class="keyword">int</span>[] A) &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i != flag) &#123;</span><br><span class="line">                    tmp = A[flag];</span><br><span class="line">                    A[flag] = A[i];</span><br><span class="line">                    A[i] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">                flag += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> A;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (N &lt;= <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> N;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> fib(N-<span class="number">1</span>) + fib(N-<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>非递归方式，因为N的取值范围只有30，最大数值未832040，所以直接用int类型就行了</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (N &lt;= <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> N</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> first = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> second = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= N; i++) &#123;</span><br><span class="line">            result = first + second;</span><br><span class="line">            first = second;</span><br><span class="line">            second = result;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>打表方式</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] F = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">13</span>, <span class="number">21</span>, <span class="number">34</span>, <span class="number">55</span>, <span class="number">89</span>, <span class="number">144</span>, <span class="number">233</span>, <span class="number">377</span>, <span class="number">610</span>, <span class="number">987</span>, <span class="number">1597</span>, <span class="number">2584</span>,</span><br><span class="line">             <span class="number">4181</span>, <span class="number">6765</span>, <span class="number">10946</span>, <span class="number">17711</span>, <span class="number">28657</span>, <span class="number">46368</span>, <span class="number">75025</span>, <span class="number">121393</span>, <span class="number">196418</span>, <span class="number">317811</span>, <span class="number">514229</span>, <span class="number">832040</span>&#125;;</span><br><span class="line">        <span class="keyword">return</span> F[N];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -286,8 +292,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/09/array/832/" rel="next" title="832. Flipping an Image">
-                  <i class="fa fa-chevron-left"></i> 832. Flipping an Image
+                <a href="/2019/09/10/array/922/" rel="next" title="922. Sort Array By Parity II">
+                  <i class="fa fa-chevron-left"></i> 922. Sort Array By Parity II
                 </a>
               
             </div>
@@ -296,8 +302,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/09/array/561/" rel="prev" title="561. Array Partition I">
-                  561. Array Partition I <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/16/array/1002/" rel="prev" title="1002. Find Common Characters">
+                  1002. Find Common Characters <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>

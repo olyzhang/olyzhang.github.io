@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+  <meta name="description" content="题目Given a date, return the corresponding day of the week for that date. The input is given as three integers representing the day, month and year respectively. Return the answer as one of the followin">
 <meta name="keywords" content="Array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="905. Sort Array By Parity">
-<meta property="og:url" content="http://yoursite.com/2019/09/09/array/905/index.html">
+<meta property="og:title" content="1185. Day of the Week">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/array/1185/index.html">
 <meta property="og:site_name" content="披星路">
-<meta property="og:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
+<meta property="og:description" content="题目Given a date, return the corresponding day of the week for that date. The input is given as three integers representing the day, month and year respectively. Return the answer as one of the followin">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-10T00:58:00.348Z">
+<meta property="og:updated_time" content="2019-09-16T01:09:30.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="905. Sort Array By Parity">
-<meta name="twitter:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
-  <link rel="canonical" href="http://yoursite.com/2019/09/09/array/905/">
+<meta name="twitter:title" content="1185. Day of the Week">
+<meta name="twitter:description" content="题目Given a date, return the corresponding day of the week for that date. The input is given as three integers representing the day, month and year respectively. Return the answer as one of the followin">
+  <link rel="canonical" href="http://yoursite.com/2019/09/16/array/1185/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>905. Sort Array By Parity | 披星路</title>
+  <title>1185. Day of the Week | 披星路</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/905/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/array/1185/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张奥运">
@@ -210,7 +210,7 @@
       <meta itemprop="name" content="披星路">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">905. Sort Array By Parity
+        <h1 class="post-title" itemprop="name headline">1185. Day of the Week
 
           
         </h1>
@@ -226,19 +226,11 @@
                 
               
 
-              <time title="创建时间：2019-09-09 16:43:20" itemprop="dateCreated datePublished" datetime="2019-09-09T16:43:20+08:00">2019-09-09</time>
+              <time title="创建时间：2019-09-16 09:03:33 / 修改时间：09:09:30" itemprop="dateCreated datePublished" datetime="2019-09-16T09:03:33+08:00">2019-09-16</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-10 08:58:00" itemprop="dateModified" datetime="2019-09-10T08:58:00+08:00">2019-09-10</time>
-              </span>
             
           
 
@@ -253,13 +245,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
-<p>You may return any answer array that satisfies this condition.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>非负数组将所有偶数放在前面，所有奇数放在后面，不管顺序</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given a date, return the corresponding day of the week for that date.</p>
+<p>The input is given as three integers representing the day, month and year respectively.</p>
+<p>Return the answer as one of the following values {“Sunday”, “Monday”, “Tuesday”, “Wednesday”, “Thursday”, “Friday”, “Saturday”}.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: day = 31, month = 8, year = 2019</span><br><span class="line">Output: &quot;Saturday&quot;</span><br></pre></td></tr></table></figure>
+
+<p>Constraints:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The given dates are valid dates between the years 1971 and 2100.</span><br></pre></td></tr></table></figure>
+
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>蔡勒公式的应用，具体公式可以查看链接：<a href="https://zh.wikipedia.org/wiki/%E8%94%A1%E5%8B%92%E5%85%AC%E5%BC%8F" target="_blank" rel="noopener">蔡勒公式</a></p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><ol>
-<li>设置一个标志位从0开始记录偶数可以放的位置，如果遇到偶数就将标志位对应的数字和这个偶数进行对换，对换之后标志位加1 (1ms，超越100%)</li>
+<li>蔡勒公式java实现</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] sortArrayByParity(<span class="keyword">int</span>[] A) &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i != flag) &#123;</span><br><span class="line">                    tmp = A[flag];</span><br><span class="line">                    A[flag] = A[i];</span><br><span class="line">                    A[i] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">                flag += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> A;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    String[] days = &#123;<span class="string">"Sunday"</span>, <span class="string">"Monday"</span>, <span class="string">"Tuesday"</span>, <span class="string">"Wednesday"</span>, <span class="string">"Thursday"</span>, <span class="string">"Friday"</span>, <span class="string">"Saturday"</span>&#125;;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">dayOfTheWeek</span><span class="params">(<span class="keyword">int</span> day, <span class="keyword">int</span> month, <span class="keyword">int</span> year)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (month &lt; <span class="number">3</span>) &#123;</span><br><span class="line">            month += <span class="number">12</span>;</span><br><span class="line">            year -= <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> c = year / <span class="number">100</span>;</span><br><span class="line">        year = year % <span class="number">100</span>;</span><br><span class="line">        <span class="keyword">int</span> w = (year + year/<span class="number">4</span> + c/<span class="number">4</span> - <span class="number">2</span>*c + <span class="number">26</span>*(month+<span class="number">1</span>)/<span class="number">10</span> + day - <span class="number">1</span>) % <span class="number">7</span>;</span><br><span class="line">        <span class="keyword">return</span> days[(w + <span class="number">7</span>) % <span class="number">7</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -286,8 +284,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/09/array/832/" rel="next" title="832. Flipping an Image">
-                  <i class="fa fa-chevron-left"></i> 832. Flipping an Image
+                <a href="/2019/09/16/array/1122/" rel="next" title="Relative Sort Array">
+                  <i class="fa fa-chevron-left"></i> Relative Sort Array
                 </a>
               
             </div>
@@ -295,10 +293,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/09/array/561/" rel="prev" title="561. Array Partition I">
-                  561. Array Partition I <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>

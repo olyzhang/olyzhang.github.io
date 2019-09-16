@@ -57,9 +57,9 @@
 
   <meta name="description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
 <meta name="keywords" content="Array">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="905. Sort Array By Parity">
-<meta property="og:url" content="http://yoursite.com/2019/09/09/array/905/index.html">
+<meta property="og:url" content="http://yoursite.com/array/905.html">
 <meta property="og:site_name" content="披星路">
 <meta property="og:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
 <meta property="og:locale" content="zh-CN">
@@ -67,7 +67,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="905. Sort Array By Parity">
 <meta name="twitter:description" content="题目Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condit">
-  <link rel="canonical" href="http://yoursite.com/2019/09/09/array/905/">
+  <link rel="canonical" href="http://yoursite.com/array/905">
 
 
 <script id="page-configurations">
@@ -75,8 +75,8 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
-    isPage: false,
+    isPost: false,
+    isPage: true,
     isArchive: false
   };
 </script>
@@ -189,71 +189,45 @@
         <div class="content-wrap">
             
 
+    
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
-      <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/array/905/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张奥运">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="披星路">
-    </span>
+    
+    
+    
+    <div class="post-block page">
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">905. Sort Array By Parity
 
-          
-        </h1>
+<h1 class="post-title" itemprop="name headline">905. Sort Array By Parity
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+</h1>
 
-              
-                
-              
+<div class="post-meta">
+  
 
-              <time title="创建时间：2019-09-09 16:43:20" itemprop="dateCreated datePublished" datetime="2019-09-09T16:43:20+08:00">2019-09-09</time>
-            </span>
-          
-            
+</div>
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-10 08:58:00" itemprop="dateModified" datetime="2019-09-10T08:58:00+08:00">2019-09-10</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
+      
+      
+      <div class="post-body">
+        
+          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A.</p>
 <p>You may return any answer array that satisfies this condition.</p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>非负数组将所有偶数放在前面，所有奇数放在后面，不管顺序</p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><ol>
@@ -262,55 +236,17 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] sortArrayByParity(<span class="keyword">int</span>[] A) &#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i != flag) &#123;</span><br><span class="line">                    tmp = A[flag];</span><br><span class="line">                    A[flag] = A[i];</span><br><span class="line">                    A[i] = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">                flag += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> A;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-    </div>
-
-    
-    
-    
         
+      </div>
       
-
-      <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/Array/" rel="tag"># Array</a>
-            
-          </div>
-        
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/09/09/array/832/" rel="next" title="832. Flipping an Image">
-                  <i class="fa fa-chevron-left"></i> 832. Flipping an Image
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/09/array/561/" rel="prev" title="561. Array Partition I">
-                  561. Array Partition I <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
-        
-      </footer>
+      
+      
+    </div>
     
-  </div>
-  
-  
-  
-  </article>
 
+    
+    
+    
   </div>
 
 
@@ -358,24 +294,6 @@
   <div class="site-description" itemprop="description"></div>
 </div>
   <nav class="site-state motion-element">
-      <div class="site-state-item site-state-posts">
-        
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">11</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-    
-      
-      
-      <div class="site-state-item site-state-tags">
-        
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span>
-        
-      </div>
-    
   </nav>
 
 
